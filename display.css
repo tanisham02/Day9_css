@@ -1,0 +1,52 @@
+ 1. display Property
+🔹 display: block;
+Takes full width.
+Examples: <div>, <p>, <h1> by default
+Starts on a new line.
+
+<div style="display: block; background: lightblue;">
+  Block Element
+</div>
+
+
+🔹 display: inline;
+Takes only as much width as needed.
+Examples: <span>, <a>, <b> by default
+Doesn’t start on a new line.
+
+<span style="display: inline; background: lightgreen;">
+  Inline Element
+</span>
+
+
+🔹 display: inline-block;
+Behaves like inline (sits inline with others), but can have width, height, padding.
+
+<span style="display: inline-block; width: 100px; height: 50px; background: pink;">
+  Inline-Block
+</span>
+
+
+🔹 display: none;
+Hides the element completely (it’s not in the layout at all).
+
+<div style="display: none;">
+  You can't see me
+</div>
+
+🔹 display: flex;
+Enables flexbox layout (1D: row or column).
+Useful for aligning items.
+
+<div style="display: flex; gap: 10px;">
+  <div>Item 1</div>
+  <div>Item 2</div>
+</div>
+
+🔹 display: grid;
+Enables grid layout (2D: rows and columns).
+
+<div style="display: grid; grid-template-columns: 1fr 1fr;">
+  <div>Left</div>
+  <div>Right</div>
+</div>
