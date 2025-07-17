@@ -1,0 +1,57 @@
+| `flex-direction` | Main Axis    | Cross Axis   |
+| ---------------- | ------------ | ------------ |
+| `row` (default)  | Left ↔ Right | Top ↕ Bottom |
+| `column`         | Top ↕ Bottom | Left ↔ Right |
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flexbox Demo</title>
+  <style>
+    .container {
+      display: flex; /* Activates Flexbox */
+      flex-direction: row; /* Main axis = horizontal (default) */
+      flex-wrap: wrap; /* Items wrap to next line if needed */
+      justify-content: space-around; /* Align on main axis (horizontal) */
+      align-items: center; /* Align on cross axis (vertical) */
+      align-content: center; /* Align rows when there's wrapping */
+      height: 300px;
+      border: 2px solid #555;
+      background: #f0f0f0;
+    }
+
+    .item {
+      background: steelblue;
+      color: white;
+      font-weight: bold;
+      font-family: sans-serif;
+      text-align: center;
+      padding: 20px;
+      margin: 10px;
+      flex-grow: 1;    /* Can grow to fill extra space */
+      flex-shrink: 1;  /* Can shrink if needed */
+      flex-basis: 150px; /* Base size before grow/shrink */
+    }
+
+    .item:nth-child(2) {
+      flex-grow: 2; /* This item grows more */
+    }
+
+    .item:nth-child(3) {
+      flex-shrink: 0; /* This won't shrink */
+    }
+  </style>
+</head>
+<body>
+  <h2>Flexbox Layout</h2>
+
+  <div class="container">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2 (grows more)</div>
+    <div class="item">Item 3 (won't shrink)</div>
+    <div class="item">Item 4</div>
+  </div>
+</body>
+</html>
