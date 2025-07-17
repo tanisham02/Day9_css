@@ -1,0 +1,27 @@
+1. overflow: visible; (default)
+Content spills outside.
+
+<div style="width: 100px; height: 50px; overflow: visible; border: 1px solid;">
+  LongTextWithoutSpaceLongTextWithoutSpace
+</div>
+
+2. overflow: hidden;
+Cuts off extra content.
+
+<div style="width: 100px; height: 50px; overflow: hidden; border: 1px solid;">
+  This text will be clipped.
+</div>
+
+3. overflow: scroll;
+Always adds scrollbars.
+
+<div style="width: 100px; height: 50px; overflow: scroll; border: 1px solid;">
+  Scroll me!
+</div>
+
+4. overflow: auto;
+Adds scrollbars only when needed.
+
+<div style="width: 100px; height: 50px; overflow: auto; border: 1px solid;">
+  Scroll if needed!
+</div>
